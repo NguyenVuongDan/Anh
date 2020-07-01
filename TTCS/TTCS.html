@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)file:///E:/TTCS/TTCS.html# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Giao diện trang website bán hàng</title>
+	<link rel="stylesheet" href="style.css">
+	    <style>
+        .carousel-control-prev-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+        }
+        
+        .carousel-control-next-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23f00' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body>
+	<nav class="open">
+        <div class="first">
+            <a href="#" class="brand-float-left">
+                <img class="logo" src="./TTCS_files/logo.png" alt="Logo">
+            </a>
+            <div class="input-group" id="searchbar">
+                <input type="text" class="form-control" placeholder="Tìm Kiếm sản phẩm">
+                <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">
+                        <span>Tìm Kiếm</span>
+                    </button>
+                </div>
+            </div>
+            <div class="order-tracking" id="or">
+                <a href="#">Theo dõi đơn hàng</a>
+            </div>
+            <div class="account" id="acc">
+                <a href="#">Tài khoản</a>
+            </div>
+            <div class="cart float-right">
+                <a href="#">Giỏ Hàng<div class="numberCircle">8</div></a>
+            </div>
+        </div>
+    </nav>
+	<div class="ContentTable">
+		<article class="story">
+			<h2 class="MenuTitle">
+				<a class="MenuLink" href="l#">Danh mục sản phẩm</a>
+			</h2>
+			<p><a class="MenuLink" href="#">Đồ điện tử</a></p>
+			<p><a class="MenuLink" href="#">Thời trang</a></p>
+			<p><a class="MenuLink" href="#">Hàng tiêu dùng</a></p>
+			<p><a class="MenuLink" href="#">Làm đẹp</a></p>
+			<p><a class="" href="#">Sách, truyện</a></p>
+		</article>
+		<article class="story">
+			<h2 class="MenuTitle">
+			<a href="#">Địa điểm giao hàng</a>
+			</h2>
+		</article>
+		<article class="story">
+			<div class="slides" style="display: block;">
+	<img src="./TTCS_files/DH1.png" style=" 
+  display: inline;
+    width: 700px;
+    height: 400px;">
+</div>
+<div class="slides" style="display: block;">
+	<img src="./TTCS_files/redmi.png" style="
+    display: flex;
+    height: 400px;
+    width: 700px;">
+</div>
+<div class="slides" style="display: block;">
+	<img src="./TTCS_files/TTrang.png" style="
+    display: flex;
+    height: 400px;
+    width: 700px;">
+</div>
+
+<div style="text-align: center">
+	<span class="dot" onclick="currentslide(0)"></span>
+	<span class="dot" onclick="currentslide(1)"></span>
+</div><br>
+<script>
+  //khai báo biến slideIndex đại diện cho slide hiện tại
+  var slideIndex;
+  // KHai bào hàm hiển thị slide
+  function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("slides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+         slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+ 
+      slides[slideIndex].style.display = "block";  
+      dots[slideIndex].className += " active";
+      //chuyển đến slide tiếp theo
+      slideIndex++;
+      //nếu đang ở slide cuối cùng thì chuyển về slide đầu
+      if (slideIndex > slides.length - 1) {
+        slideIndex = 0
+      }    
+      //tự động chuyển đổi slide sau 5s
+      setTimeout(showSlides, 10000);
+  }
+  //mặc định hiển thị slide đầu tiên 
+  showSlides(slideIndex = 0);
+ 
+ 
+  function currentslide(n) {
+    showsSlides(slideIndex = n);
+  }
+</script>
+</article>
+</div><br>
+<div>
+  <div>
+    <h2 class="hot">tìm kiếm hàng đầu</h2>
+    <div class="row">
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/oplung.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">100000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/vongtay.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">300000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/donghonam.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">3597000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/donghonu.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">1089000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/vongco.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">88000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./TTCS_files/cuongluc.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">30000đ</span></p>
+                        </a>
+                    </div>
+          <div class="col-4"></div>        
+  </div>
+    
+  <div>
+    <h2 class="hot">Dành riêng cho bạn</h2>
+    <div class="row">
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/tivi samsung.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">11600000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/noi.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">4499000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/bim.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">215000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/iphone11.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">30490000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#" class="productlink">
+                            <img src="./TTCS_files/huawei.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">5790000đ</span></p>
+                        </a>
+                    </div>
+                    <div class="col productINF d-flex justify-content-center">
+                        <a href="#">
+                            <img src="./TTCS_files/Sherloc.png" alt="Sản phẩm" class="storyimg">
+                            <p class="product-name">
+                                SAMPLE
+                            </p>
+                            <p class="product-price">Giá bán: <span style="color: #eb1f27;">180000đ</span></p>
+                        </a>
+                    </div>
+      <div class="col-4"></div>               
+  </div>
+</div>  
+ <div>
+   <p>2020- Bản quyền của Trường đại học Công Nghệ Thông Tin &amp; Truyền Thông Thái Nguyên</p>
+ </div>
+		
+</body>
+</html>

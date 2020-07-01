@@ -1,0 +1,142 @@
+.numberCircle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #eb1f27;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-left: 10px;
+    padding-top: 5px;
+    display: inline-block;
+}
+
+.cart {
+    display: inline;
+    font: 1rem Arial, sans-serif;
+    margin-left: 0%;
+    margin-right: 5%;
+
+}
+.logo{
+    width: 40px;
+    height: 40px;
+
+}
+
+a {
+    color: teal;
+    text-decoration: unset;
+}
+
+a.productlink {
+    color: initial;
+    text-decoration: unset;
+    
+}
+
+a:hover {
+    color: teal;
+    text-decoration: unset;
+    padding: 10px ;
+}
+
+.first {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 5%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.order-tracking{
+    display: inline;
+
+}
+#or{
+    margin-left: 0%;
+    margin-right: 5%;
+}
+.account{
+    
+    display: inline;
+    
+}
+#acc{
+    margin-left: 0%;
+    margin-right: 5%;
+}
+.input-group{
+    display: contents;
+    max-width: 200%; 
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+.form-control{
+    width: 500px;
+    height: 20px; 
+    margin-left: 5%;
+    margin-right: 0%;
+}
+.input-group-append{
+    display: contents;
+}
+.btn{
+    background-color:#eb1f27; 
+    border: 0px;
+    width: 80px;
+    height: 25px; 
+    margin-left: 0%;
+    margin-right: 5%;
+
+}
+.ContentTable {
+    max-width: 100%;
+    padding: 10px 20px 20px 5px;
+    background-color: white;
+    display: flex
+}
+.story {
+    margin-left: 30px;
+    padding: 20px 30px 20px 20px;
+    border-bottom: 1px solid #707070;
+}
+.MenuTitle {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.hot{
+    margin-left: 40px;
+    text-transform: uppercase;
+}
+.productINF {
+    margin-left: 70px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 300px;
+    height: 270px;
+    border: 1px groove rgb(182, 182, 182);
+    padding-top: 20px;
+    display: inline-block;
+}
+.storyimg{
+    border: 3px solid #b1b1b15b;
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+}
