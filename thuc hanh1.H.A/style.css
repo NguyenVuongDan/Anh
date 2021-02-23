@@ -1,0 +1,64 @@
+*{
+	box-sizing: border-box
+}
+body{
+	margin: 0;
+}
+/*ĐỊnh dạng header*/
+.header{
+	background-color: lightskyblue;
+	color: red;
+	padding: 10px;
+	text-align: center;
+}
+/*Thanh điều hướng*/
+.topnav{
+	overflow: hidden;
+	background-color: violet;
+}
+/*Link điều hướng*/
+.topnav a{
+	float: left;
+	display: block;
+	color: red;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+/*link liên kết*/
+.topnav a:hover{
+	background-color: lightskyblue;
+	color: white;
+	font-weight: bold;
+}
+/*tạo 3 cột*/
+/*tạo 3 cột bằng nhau*/
+.column{
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+/*cột bên trái và phải*/
+.column.side{
+	width: 25%;
+	display: inline-block;
+	vertical-align: top;
+}
+.column.middle{
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+/*clear fload khác sau các cột*/
+.row :after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*Định dạng footer*/
+footer{
+	background-color: lightyellow;
+	color: lightslategrey;
+	padding: 5px;
+	text-align: center;
+}
